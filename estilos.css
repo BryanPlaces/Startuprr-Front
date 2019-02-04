@@ -1,0 +1,146 @@
+body {
+    margin: 0px;
+}
+
+.portada_img_inicial {
+    height: 750px;
+    background-color: gray;
+}
+
+.portada_img_inicial > img {
+    display: block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.texto_img_portada {
+    display: block;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 350px;
+    left: 0;
+    right: 0;
+    width: 1000px;
+    height: 400px;
+}
+
+.portada_img_inicial > .title {
+    font-size: 45px;
+}
+
+/*****************************************/
+nav {
+    display: flex;
+    align-items: center;  
+    height: 100px;
+    width: 1170px;
+    margin-left:auto;
+    margin-right:auto;
+    padding-bottom: 80px;
+}
+
+.logo {
+    padding-right: 323px;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    grid-gap: 30px;
+    font-size: 0.868rem;
+    margin-left: 30px;
+    height: 80px;
+}
+
+.menu_pagina {
+    font-size: 0.868rem;
+    text-decoration: none;
+    color: #606060;
+
+}
+
+/**********************************/
+
+.what_we_offer {
+    height: 545px;
+    width: 1170px;
+    background-color: #f9f9f9;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 52px 1fr;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    grid-gap: 10px;
+}
+
+.section2_1 {
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/4;
+}
+
+/*************************************************/
+
+.amazing_features {
+    height: 620px;
+    background-color: yellow;
+}
+
+.busines_skills {
+    height: 480px;
+    background-color: white;
+}
+
+.our_powerful_skills {
+    height: 404px;
+    background-color: #383838;
+}
+
+.sample_works {
+    height: 880px;
+    background-color: white;
+}
+
+.company_facts {
+    height: 484px;
+    background-color: #383838;
+}
+
+.team_members {
+    height: 703px;
+    background-color: white;
+}
+
+.comments {
+    height: 312px;
+    background-color: aqua;
+}
+
+.busines {
+    height: 260px;
+    background-color: #383838;
+}
+
+.real_cheap_prices {
+    height: 896px;
+    background-color: white;
+}
+
+.social_networks {
+    height: 277px;
+    background-color: #383838;
+}
+
+.map {
+    height: 502px;
+}
+
+.copyright {
+    height: 100px;
+    background-color: #383838;
+}
