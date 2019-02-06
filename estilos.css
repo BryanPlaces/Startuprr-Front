@@ -88,13 +88,83 @@ nav {
 
 .amazing_features {
     height: 620px;
-    background-color: yellow;
+    background-color: #383838;
 }
 
-.busines_skills {
-    height: 480px;
-    background-color: white;
+.section_features {
+    width: 1170px;
+    height: 620px;
+    display: grid;
+    grid-template-columns: 70px 300px 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
 }
+
+.title_features {
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/4;
+}
+
+.screen_icon {
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+.puzle_icon {
+    grid-row: 3/4;
+    grid-column: 1/2;
+}
+
+.star_icon {
+    grid-row: 4/5;
+    grid-column: 1/2;
+}
+
+.features_1 {
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+.features_2 {
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+
+.features_3 {
+    grid-row: 4/5;
+    grid-column: 2/3;
+}
+
+.tablets_img {
+    grid-row: 2/5;
+    grid-column: 3/4;
+}
+.tablets_img > img {
+    height: 100%;
+    width: 80%;
+    float: right;
+}
+
+/*************************************************/
+
+.business_skills {
+    height: 480px;
+    width: 1170px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 40px 1fr 40px 1fr 40px 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 0 auto;
+    align-items: center;
+    grid-gap: 20px;
+}
+
+.especial_screen, .especial_puzle, .especial_star, .especial_3barras, .carro_compra, .especial_disco {
+    padding-bottom: 30px;
+}
+
+/************************************************/
 
 .our_powerful_skills {
     height: 404px;
