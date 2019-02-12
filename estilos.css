@@ -217,10 +217,40 @@ nav {
 /************************************************/
 
 
-.sample_works {
+.section_sample_works {
     height: 880px;
     background-color: white;
+    display: grid;
+    grid-template-rows: 1fr 502px 1fr;
 }
+.box_images > img {
+    width: 313px;
+    height: 246px;    
+}
+
+.sample_works_title {
+    text-align: center;
+    margin-top: 80px;
+}
+.sample_works_title > h2 {
+    margin-top: 0;
+}
+
+.sample_works_images {
+    display: grid;
+    grid-template-columns: 313px 313px 313px 313px 313px 313px;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5px;
+    margin: 0 auto;
+}
+
+.sample_works_buttom {
+    text-align: center;
+    margin-top: 66px;
+}
+
+/************************************************/
+
 
 .company_facts {
     height: 484px;
