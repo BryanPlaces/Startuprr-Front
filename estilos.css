@@ -4,12 +4,39 @@ body {
     font-family: sans-serif;
 }
 
+/**************** Colores ****************/
+
+.section2_2 > p, .section2_3 > p, .section2_4 > p, .lorem_color_7a7a7a,
+.container > .box > p {
+    color: #7a7a7a;
+}
+
+.text_color_aaaaaa {
+    color: #aaaaaa;
+    font-size: 12px;
+}
+
+.title_features > p, .our_skills > p{
+    color: #545454;
+}
+
+.title_features > h2, .features_1 > h4, .features_2 > h4, .features_3 > h4,
+.our_skills > h2 {
+    color: #e4e4e4;
+}
+.title_features > h2 > span, .our_skills > h2 > span{
+    color: #00a99d;
+}
+
+/*****************************************/
+
+
 .portada_img_inicial {
     height: 750px;
-    background-color: gray;
 }
 
 .portada_img_inicial > img {
+    
     display: block;
     position: relative;
     height: 100%;
@@ -21,30 +48,54 @@ body {
     position: absolute;
     margin-left: auto;
     margin-right: auto;
-    top: 350px;
+    top: 205px;
     left: 0;
     right: 0;
-    width: 1000px;
+    width: 1170px;
     height: 400px;
+
 }
 
-.portada_img_inicial > .title {
-    font-size: 45px;
+.container_text {
+    width: 625px;
+}
+
+.container_text > .text_1, .text_2 {
+    color: #383838;
+    text-align: center;
+}
+
+.container_text > .text_2 > span{
+    color: #00a99d;
+}
+
+.container_text > .text_2 {
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.container_text > h1 {
+    font-size: 62px;
+    font-weight: 625px;
+    margin-top: 0;
+    color: #383838;
 }
 
 /*****************************************/
-nav {
+.container_nav {
     display: flex;
     align-items: center;  
     height: 100px;
     width: 1170px;
-    margin-left:auto;
-    margin-right:auto;
-    padding-bottom: 80px;
+    margin: 0 auto;
+}
+nav{
+    border-bottom: 3px solid #dedede;
+
 }
 
 .logo {
-    padding-right: 323px;
+    padding-right: 315px;
 }
 
 .menu {
@@ -60,6 +111,7 @@ nav {
 
 .menu_pagina {
     font-size: 0.868rem;
+    font-weight: 700;
     text-decoration: none;
     color: #606060;
 
@@ -73,9 +125,8 @@ nav {
     background-color: #f9f9f9;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 52px 1fr;
+    grid-template-rows: 132px 1fr;
     margin: 0 auto;
-    align-items: center;
     text-align: center;
     grid-gap: 10px;
 }
@@ -84,6 +135,43 @@ nav {
     justify-content: center;
     align-items: center;
     grid-column: 1/4;
+    margin-top: 40px;
+}
+
+.section2_1 > h2 {
+    color: #383838;
+    font-weight: 800;
+}
+
+.section2_1 > h2 > span {
+    color: #00a99d;
+}
+
+.section2_1 > p {
+    color: #8a8a8a;
+}
+
+.section2_2, .section2_3, .section2_4 {
+    margin-top: 50px;
+}
+
+.section2_2 > h4, .section2_3 > h4, .section2_4 > h4 {
+    color: #606060;
+}
+
+
+
+.buttom_read_more {
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: 600;
+    font-size: 12px;
+    color: #8a8a8a;
+    border: 1px solid #dedede;
+    border-radius: 6px;
 }
 
 /*************************************************/
@@ -103,12 +191,19 @@ nav {
 }
 
 .title_features {
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     grid-column: 1/4;
 }
 
+
+.screen_icon, .puzle_icon, .star_icon {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
 .screen_icon {
+
     grid-row: 2/3;
     grid-column: 1/2;
 }
@@ -138,6 +233,10 @@ nav {
     grid-column: 2/3;
 }
 
+.features_1 > p, .features_2 > p, .features_3 > p {
+    color: #737373;
+}
+
 .tablets_img {
     grid-row: 2/5;
     grid-column: 3/4;
@@ -153,13 +252,18 @@ nav {
 .business_skills {
     height: 480px;
     width: 1170px;
-    background-color: white;
     display: grid;
     grid-template-columns: 40px 1fr 40px 1fr 40px 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 130px 130px;
     margin: 0 auto;
     align-items: center;
+    align-content: center;
     grid-gap: 20px;
+    grid-row-gap: 50px;
+}
+
+.subtitles_h4_color {
+    color: #606060;
 }
 
 .especial_screen, .especial_puzle, .especial_star, .especial_3barras, .carro_compra, .especial_disco {
@@ -205,6 +309,7 @@ nav {
     text-align: center;
     font-size: 30px;
     line-height: 120px;
+    color: white;
 }
 
 .container .box canvas {
@@ -213,19 +318,24 @@ nav {
     left: 0;
 }
 
+.container > .box > p {
+    font-weight: bold;
+}
+
 
 /************************************************/
 
 
 .section_sample_works {
     height: 880px;
+    width: 100%;
     background-color: white;
     display: grid;
     grid-template-rows: 1fr 502px 1fr;
 }
 .box_images > img {
-    width: 313px;
-    height: 246px;    
+    width: 100%;
+    height: 100%;    
 }
 
 .sample_works_title {
@@ -234,11 +344,21 @@ nav {
 }
 .sample_works_title > h2 {
     margin-top: 0;
+    color: #383838;
+    font-weight: 900;
+}
+
+.sample_works_title > h2 > span {
+    color: #00a99d;
+}
+
+.sample_works_title > p {
+    color: #8a8a8a;
 }
 
 .sample_works_images {
     display: grid;
-    grid-template-columns: 313px 313px 313px 313px 313px 313px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-gap: 5px;
     margin: 0 auto;
@@ -246,16 +366,61 @@ nav {
 
 .sample_works_buttom {
     text-align: center;
+
+    width: 1170px;
+    height: 40px;
+    margin: 0 auto;
     margin-top: 66px;
+    
+}
+
+.sample_works_buttom > a {
+    text-decoration: none;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 45%;
+    padding-right: 45%;
+    font-weight: 600;
+    font-size: 12px;
+    color: #e4e4e4;
+    background-color: #00a99d;
+    border-radius: 6px;
 }
 
 /************************************************/
 
-
-.company_facts {
-    height: 484px;
+.section_company_facts {
+    height: 404px;
     background-color: #383838;
+    display: grid;
+    grid-template-rows: 128px 1fr;
+    
 }
+
+/**************************************************/
+
+.section_satisfied {
+    height: 80px;
+    background-color: #00a99d;
+}
+
+.company_facts_title {
+    width: 1170px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.company_facts_numbers {
+    width: 1170px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 90px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/************************************************/
 
 .team_members {
     height: 703px;
