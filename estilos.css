@@ -14,17 +14,24 @@ body {
 .text_color_aaaaaa {
     color: #aaaaaa;
     font-size: 12px;
+    margin-top: 0;
 }
 
-.title_features > p, .our_skills > p{
+/*color del texto debajo del titulo y otros elementos, se aplica sobre el fondo oscuro*/
+.title_features > p, .our_skills > p, .company_facts_title > p,
+.box > .text_number{
     color: #545454;
 }
 
+
+/*Color titulo parte blanca sobre fondo oscuro*/
 .title_features > h2, .features_1 > h4, .features_2 > h4, .features_3 > h4,
-.our_skills > h2 {
+.our_skills > h2, .company_facts_title > h2{
     color: #e4e4e4;
 }
-.title_features > h2 > span, .our_skills > h2 > span{
+
+/*Color titulo parte azul y otros elementos*/
+.title_features > h2 > span, .our_skills > h2 > span, .company_facts_title > h2 > span{
     color: #00a99d;
 }
 
@@ -264,6 +271,7 @@ nav{
 
 .subtitles_h4_color {
     color: #606060;
+    margin: 0;
 }
 
 .especial_screen, .especial_puzle, .especial_star, .especial_3barras, .carro_compra, .especial_disco {
@@ -397,11 +405,15 @@ nav{
     
 }
 
-/**************************************************/
+.box > .number {
+    font-size: 80px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #e4e4e4;
+}
 
-.section_satisfied {
-    height: 80px;
-    background-color: #00a99d;
+.box > .text_number {
+    font-weight: bold;
 }
 
 .company_facts_title {
@@ -418,6 +430,50 @@ nav{
     grid-gap: 90px;
     margin: 0 auto;
     text-align: center;
+}
+
+/**************************************************/
+
+.section_satisfied {
+    height: 80px;
+    background-color: #00a99d;
+}
+
+.container_satisfied {
+    width: 1170px;
+    height: 80px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 150px 150px;
+    grid-gap: 10px;
+}
+
+.container_satisfied > .text, .button_satisfied {
+    display: flex;
+    align-items: center;
+}
+
+.container_satisfied > .text {
+    color: #e4e4e4;
+    font-weight: bold;
+}
+
+.button_satisfied > a {
+    text-decoration: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: 600;
+    font-size: 12px;
+    color: #606060;
+    background-color: #e4e4e4;
+    border-radius: 5px;
+
+}
+
+.container_satisfied > p {
+    margin: 0;
 }
 
 /************************************************/
