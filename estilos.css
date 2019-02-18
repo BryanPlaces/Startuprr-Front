@@ -478,15 +478,49 @@ nav{
 
 /************************************************/
 
-.team_members {
+.section_team_members {
     height: 703px;
     background-color: white;
+    display: grid;
+    grid-template-rows: 1fr 90px 50px 410px 1fr;
 }
 
-.comments {
+.team_members_title {
+    grid-row: 2/3;
+    width: 1170px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container_team_members {
+    grid-row: 4/5;
+    width: 1170px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.img_team_member >img {
+    width: 270px;
+    height: 270px;
+}
+
+
+/************************************************/
+
+.section_description_member {
     height: 312px;
     background-color: aqua;
 }
+
+.description_member {
+    width: 1170px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/************************************************/
+
 
 .busines {
     height: 260px;
