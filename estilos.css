@@ -341,6 +341,7 @@ nav{
     display: grid;
     grid-template-rows: 1fr 502px 1fr;
 }
+
 .box_images > img {
     width: 100%;
     height: 100%;    
@@ -521,15 +522,52 @@ nav{
 
 /************************************************/
 
-
-.busines {
+.section_business {
     height: 260px;
     background-color: #383838;
+    display: flex;
+    align-items: center;
 }
 
-.real_cheap_prices {
-    height: 896px;
+.container_business {
+    width: 1170px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+
+}
+
+/************************************************/
+
+
+.section_real_cheap_prices {
+    height: 725px;
     background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+.container_real_cheap_prices {
+    width: 1170px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 80px 440px;
+    grid-gap: 50px;
+}
+
+.real_cheap_title {
+    text-align: center;
+}
+
+.container_plans {
+     display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 35px;
+}
+
+.plans_cheap_prices {
+    text-align: center;
 }
 
 /*********************************************/
@@ -549,28 +587,54 @@ nav{
 
 /*********************************************/
 
-.social_networks {
+.section_social_networks {
     height: 277px;
     background-color: #383838;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-
+    display: flex;
     align-items: center;
-    align-content: center;
+
+}
+
+.container_social_networks {
+    width: 1170px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 50px;
+}
+
+.social_networks_logo {
+    margin: 0 auto;
+}
+
+.container_networks_icons {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
+    grid-gap: 10px;
     
 }
 
-.networks_icons {
-    padding-bottom: 50px;
+.network_icon {
+    height: 40px;
+    width: 40px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    border: 2px solid #5b5b5b;
+    border-radius: 5px;
 }
 
-.networks_icons > img {
-    width: 40px;
-    height: 40px;
+.network_icon > i {
+    color: white;
+}
 
+.network_icon {
+    cursor: pointer;
+}
+
+.network_icon:hover {
+    background-color: #00a99d;
 }
 
 /*********************************************/
@@ -585,4 +649,9 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.copyright > p {
+    color: #cccccc;
+    font-weight: 900;
 }
