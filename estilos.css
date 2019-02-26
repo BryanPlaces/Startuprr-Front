@@ -65,63 +65,93 @@ body {
 
 .container_text {
     width: 625px;
+    text-align: center;
 }
 
-.container_text > .text_1, .text_2 {
+.text_1, .text_2 {
     color: #383838;
     text-align: center;
 }
 
-.container_text > .text_2 > span{
+.text_2 > span{
     color: #00a99d;
 }
 
-.container_text > .text_2 {
+.text_2 {
     font-weight: 800;
     font-size: 24px;
 }
 
-.container_text > h1 {
+.box_title_page > h1 {
     font-size: 62px;
     font-weight: 625px;
     margin-top: 0;
     color: #383838;
 }
 
+
+
+
 /*****************************************/
 .container_nav {
-    display: flex;
-    align-items: center;  
-    height: 100px;
     width: 1170px;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+
 }
 nav{
+    height: 100px;
     border-bottom: 3px solid #dedede;
 
 }
 
-.logo {
+/* .logo {
     padding-right: 315px;
-}
+} */
 
 .menu {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
     text-align: center;
-    grid-gap: 30px;
+    margin: auto;
+    grid-gap: 15px;
     font-size: 0.868rem;
     margin-left: 30px;
     height: 80px;
 }
 
-.menu_pagina {
+.container_menu_pagina {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.container_menu_pagina {
+    padding: 15px;
+    cursor: pointer;
+}
+
+.container_menu_pagina:hover {
+    background-color: #00a99d;
+}
+
+.menu_pagina, #search_icon {
     font-size: 0.868rem;
     font-weight: 700;
     text-decoration: none;
     color: #606060;
+}
 
+.container_menu_pagina:hover .menu_pagina{
+    color: white;
+}
+
+.container_menu_pagina:hover #search_icon {
+    color: white;
 }
 
 /**********************************/
