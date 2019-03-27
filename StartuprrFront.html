@@ -8,79 +8,74 @@
 
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-        crossorigin="anonymous">
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
 </head>
 <body>
-    
+
+    <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="jquery.easypiechart.js"></script>    
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="app.js"></script>
+
     <section class="portada_img_inicial">
         
-        <img src="img/imagen de fondo.jpg" alt="ImagenPortada">
+        <img src="img/imagenDeFondo.jpg" alt="ImagenPortada">
 
-        <div class="texto_img_portada">
-            <div class="container_text">
-                
-                <div class="box_first_text">
-                    <p class="text_1">WHAT ARE YOU WAITING FOR?</p>
-                </div>
-                
-                <div class="box_title_page">
-                    <h1>LET'S BE CREATIVE!</h1>
-                </div>
-
-                <div class="box_second_text">
-                    <p class="text_2">
-                        <img src="img/left-circle.png" alt="left-circle">
-                        <span>START</span> DOING THAT
-                        <img src="img/right-circle.png" alt="right-circle">
-                    </p>
-                </div>
-
-                <div class="box_img_scroll_icon">
-                    <img src="img/scroll-icon.png" alt="scroll-icon">
-                </div>
+        <div class="texto_img_portada">   
+            <div class="box_first_text">
+                <p class="text_1">WHAT ARE YOU WAITING FOR?</p>
             </div>
+            
+            <div class="box_title_page">
+                <h1>LET'S BE CREATIVE!</h1>
+            </div>
+
+            <div class="box_second_text">
+                <p class="text_2">
+                    <img src="img/left-circle.png" alt="left-circle">
+                    <span>START</span> DOING THAT
+                    <img src="img/right-circle.png" alt="right-circle">
+                </p>
+            </div>
+
+            <div class="box_img_scroll_icon">
+                <img src="img/scroll-icon.png" alt="scroll-icon">
+            </div>
+
         </div>
     </section>
-    
+
     <nav>
-        <div class="container_nav">
-            <div class="logo">
-                <img src="img/logo startuprr.jpg" alt="logo">
-            </div>
+        <div class="container_nav" style="overflow:auto">
 
-            <div class="menu">
-                <div class="container_menu_pagina" onclick="location.href='';">
-                    <a href="#" class="menu_pagina">HOME</a>
-                </div>
+            <div class="menu" id="myMenu">
 
-                <div class="container_menu_pagina" onclick="location.href='';">
-                    <a href="#" class="menu_pagina">PORTFOLIO</a>
-                </div>
-
-                <div class="container_menu_pagina" onclick="location.href='';">
-                    <a href="#" class="menu_pagina">BLOG</a>
-                </div>
+                <img src="img/logo startuprr.jpg" alt="logo" class="logo">
                 
-                <div class="container_menu_pagina" onclick="location.href='';">
-                    <a href="#" class="menu_pagina">PAGES</a>
-                </div>
+                <a href="#" class="menu_pagina" id="first_element_menu">HOME</a>
+                <a href="#" class="menu_pagina">PORTFOLIO</a>
+                <a href="#" class="menu_pagina">BLOG</a>
+                <a href="#" class="menu_pagina">PAGES</a>
+                <a href="#" class="menu_pagina">FEATURES</a>
+                <a href="#" class="menu_pagina">MEGA&nbspMENU</a>
+                <a href="#" class="menu_pagina">CONTACT</a>
+                <a href="#" class="menu_pagina"><i class="fas fa-search"></i></a> 
 
-                <div class="container_menu_pagina" onclick="location.href='';">
-                    <a href="#" class="menu_pagina">FEATURES</a>
-                </div>
+                <a href="javascript:void(0);" class="iconPrueba" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
 
-                <div class="container_menu_pagina" onclick="location.href='';">
-                    <a href="#" class="menu_pagina">MEGA&nbspMENU</a>
-                </div>
-                
-                <div class="container_menu_pagina" onclick="location.href='';">
-                    <a href="#" class="menu_pagina">CONTACT</a>
-                </div>
-
-                <div class="container_menu_pagina" onclick="location.href='';">
-                    <i class="fas fa-search" id="search_icon"></i>
-                </div>
             </div>
         </div>
     </nav>
@@ -92,36 +87,40 @@
             <p>We offer our customers the best services & solutions, this is our main services list</p>
         </div>
 
-        <div class="section2_2">
-            <img src="img/icono pantalla.jpg" alt="icono_pantalla">
-            <h4>RESPONSIVE & MULTIPURPOSE</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente aliquam totam,
-                rerum</p>
-            <br>
-            <a href="#" class="buttom_read_more">READ MORE</a>
-        </div>
+        <div class="container_sections234" style="overflow:auto">
 
-        <div class="section2_3">
-            <img src="img/icono pieza de puzle.jpg" alt="pieza_puzle">
-            <h4>EASY CUSTOMIZATION</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente aliquam totam,
-                rerum</p>
-            <br>
-            <a href="#" class="buttom_read_more">READ MORE</a>
-        </div>
+            <div class="section2_2">
+                <img src="img/icono pantalla.jpg" alt="icono_pantalla">
+                <h4>RESPONSIVE & MULTIPURPOSE</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente aliquam totam,
+                    rerum</p>
+                <br>
+                <a href="#" class="buttom_read_more">READ MORE</a>
+            </div>
 
-        <div class="section2_4">
-            <img src="img/disco de vinilo.jpg" alt="disco_vinilo">
-            <h4>AWESOME FRIENDLY SUPPORT</h4> 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente aliquam totam,
-                rerum</p>
-            <br>
-            <a href="#" class="buttom_read_more">READ MORE</a>
-        </div>
+            <div class="section2_3">
+                <img src="img/icono pieza de puzle.jpg" alt="pieza_puzle">
+                <h4>EASY CUSTOMIZATION</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente aliquam totam,
+                    rerum</p>
+                <br>
+                <a href="#" class="buttom_read_more">READ MORE</a>
+            </div>
 
+            <div class="section2_4">
+                <img src="img/disco de vinilo.jpg" alt="disco_vinilo">
+                <h4>AWESOME FRIENDLY SUPPORT</h4> 
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente aliquam totam,
+                    rerum</p>
+                <br>
+                <a href="#" class="buttom_read_more">READ MORE</a>
+            </div>
+
+        </div>
     </section>
-
+    
     <section class="amazing_features">
+        
         <div class="section_features">
             <div class="title_features">
                 <h2>AMAZING <span>FEATURES</span></h2>
@@ -164,9 +163,7 @@
 
     <section class="business_skills">
 
-        <div class="especial_screen">
-            <img src="img/icono screen 2.jpg" alt="screen_icon2">
-        </div>
+        <img src="img/icono screen 2.jpg" alt="screen_icon2" class="especial_screen">
 
         <div class="text1_skills">
             <h4 class="subtitles_h4_color">RESPONSIVE & MULTIPURPOSE</h4>
@@ -175,9 +172,7 @@
 
         </div>
 
-        <div class="especial_puzle">
-            <img src="img/icono puzle 2.jpg" alt="puzle_icon2">
-        </div>
+        <img src="img/icono puzle 2.jpg" alt="puzle_icon2" class="especial_puzle">
 
         <div class="text2_skills">
             <h4 class="subtitles_h4_color">EASY CUSTOMIZATION</h4>
@@ -186,9 +181,7 @@
 
         </div>        
 
-        <div class="especial_star">
-            <img src="img/icono estrella 2.jpg" alt="star_icon2">
-        </div>
+        <img src="img/icono estrella 2.jpg" alt="star_icon2" class="especial_star">
 
         <div class="text3_skills">
             <h4 class="subtitles_h4_color">UNLIMITED FEATURES</h4>
@@ -196,9 +189,7 @@
             <p class="lorem_color_7a7a7a">Proin in magna a ipsum viverra scelerisq enec turp, nunc vestibulum.</p>
         </div>
 
-        <div class="especial_3barras">
-            <img src="img/icono 3 barras.jpg" alt="3barras_icon">
-        </div>
+        <img src="img/icono 3 barras.jpg" alt="3barras_icon" class="especial_3barras">
 
         <div class="text4_skills">
             <h4 class="subtitles_h4_color">CLEAN & MODULAR CODING</h4>
@@ -206,9 +197,7 @@
             <p class="lorem_color_7a7a7a">Proin in magna a ipsum viverra scelerisq enec turp, nunc vestibulum.</p>
         </div>
 
-        <div class="carro_compra">
-            <img src="img/icono comprar.jpg" alt="carro_compra">
-        </div>
+        <img src="img/icono comprar.jpg" alt="carro_compra" class="carro_compra">
 
         <div class="text5_skills">
             <h4 class="subtitles_h4_color">THE BEST E-COMMERCE SOLUTIONS</h4>
@@ -216,9 +205,8 @@
             <p class="lorem_color_7a7a7a">Proin in magna a ipsum viverra scelerisq enec turp, nunc vestibulum.</p>
         </div>        
 
-        <div class="especial_disco">
-            <img src="img/icono vinilo 2.jpg" alt="disc_icon">
-        </div>
+        <img src="img/icono vinilo 2.jpg" alt="disc_icon" class="especial_disco">
+        
 
         <div class="text6_skills">
             <h4 class="subtitles_h4_color">AWESOME FRIENDLY SUPPORT</h4>
@@ -272,18 +260,16 @@
                 
         </div>
 
-        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-        <script src="jquery.easypiechart.js"></script>
         
-        <script>
+        <script type="text/javascript">
             $(function() {
                 $('.chart').easyPieChart({
                     //your options goes here
                     barColor:'#00a99d',
-            scaleColor:false,
-            lineWidth:5,
-            lineCap:'circle',
-            size:120
+                    scaleColor:false,
+                    lineWidth:5,
+                    lineCap:'circle',
+                    size:120
                 });
             });
         </script>
@@ -475,20 +461,153 @@
         </div>
     </section>
 
+    <script>
+        $(function() {   
+         $('.container_team_members').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            centerMode: true,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 950,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                breakpoint: 630,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+          });
+        });
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="slide" style="width: 85%; margin:0 auto;">
+        <div><img src="img/logos empresas/burnabox logo.jpg" alt="burnabox"></div>
+        <div><img src="img/logos empresas/hobnob logo.jpg" alt="hobnob"></div>
+        <div><img src="img/logos empresas/scenthound logo.jpg" alt="scenthound"></div>
+        <div><img src="img/logos empresas/vividways logo.jpg" alt="vividways"></div>
+    </div>
+
+
+      <script>
+        $(function() {   
+         $('.slide').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            cssEase: 'linear',  
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 950,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                breakpoint: 630,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                    }
+                }
+            ]
+          });
+        });
+        </script> -->
+
     <section class="section_description_member">
-        <div class="description_member">
 
-            <div class="description_member_name">
-                <p>ALEXIS SIMPSON</p>
+        <div class="container_description_member">
+            <div class="description_member">
+                <div class="description_member_name">
+                    <p>ALEXIS SIMPSON</p>
+                </div>
+
+                <div class="description_member_text">
+                    <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, doloremque. Quaerat corporis expedita nam mollitia, vitae, amet, cum temporibus aliquam labore id est iusto exercitationem. Explicabo laudantium ad sit eveniet."</p>
+                </div>
             </div>
 
-            <div class="description_member_text">
-                <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, doloremque. Quaerat corporis expedita nam mollitia, vitae, amet, cum temporibus aliquam labore id est iusto exercitationem. Explicabo laudantium ad sit eveniet."</p>
+            <div class="description_member">
+                <div class="description_member_name">
+                    <p>STEVEN COLE</p>
+                </div>
+
+                <div class="description_member_text">
+                    <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, doloremque. Quaerat corporis expedita nam mollitia, vitae, amet, cum temporibus aliquam labore id est iusto exercitationem. Explicabo laudantium ad sit eveniet."</p>
+                </div>
             </div>
 
+            <div class="description_member">
+                <div class="description_member_name">
+                    <p>ALEXweIS SIMPSON</p>
+                </div>
+
+                <div class="description_member_text">
+                    <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, doloremque. Quaerat corporis expedita nam mollitia, vitae, amet, cum temporibus aliquam labore id est iusto exercitationem. Explicabo laudantium ad sit eveniet."</p>
+                </div>
+            </div>
+
+            <div class="description_member">
+                <div class="description_member_name">
+                    <p>ALEXISwewe SIMPSON</p>
+                </div>
+
+                <div class="description_member_text">
+                    <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, doloremque. Quaerat corporis expedita nam mollitia, vitae, amet, cum temporibus aliquam labore id est iusto exercitationem. Explicabo laudantium ad sit eveniet."</p>
+                </div>
+            </div>
         </div>
     </section>
 
+    <script>
+        $('.container_description_member').slick();
+    </script>
+<!--
     <section class="section_business">
         <div class="container_business">
             
@@ -648,6 +767,6 @@
         </section>
     </footer>
 
-
+-->
 </body>
 </html>
